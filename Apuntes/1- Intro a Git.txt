@@ -34,3 +34,7 @@ Donde <nombre-remoto> es el nombre del repositorio remoto al que deseas enviar l
 Algunos puntos clave sobre git push:
 -Puedes utilizar opciones adicionales en el comando git push, como --force para forzar la actualización de la rama remota, o --tags para enviar etiquetas junto con los commits.
 -Es recomendable hacer git pull antes de git push para obtener los últimos cambios del repositorio remoto y asegurarte de que no haya conflictos entre tus cambios locales y los cambios remotos.
+
+
+Comentarios: Mi compañera se expresó de manera excelente definiendo cada una de las funciones dadas, inslusive agregando sus sintaxis, lo cual me parece de mucha utilidad para poder ejecutar correctacmente los comandos y no cometer fallas. 
+Es de fácil lectura y comprensión, haciendo posible su interpretación para cualquier persona que maneje un básico manejo con Git, 10/10 el mini manual.
