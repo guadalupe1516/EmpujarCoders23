@@ -1,0 +1,36 @@
+Commit:El comando git commit guardará todos los cambio hechos en la zona de montaje o área de preparación (staging area), junto con una breve descripción del usuario, en un "commit" al repositorio local, en un punto específico en la historia del repositorio.
+unas de las opciones mas comunes y utilizadas son:
+-m: m quiere decir mensaje, el mensaje debe ser una breve descripción de los cambios a los que se les está realizando commit y debe estar al final del comando envuelto entre comillas " ".
+-a: a viene de all que significa todo.Esta opción prepara automáticamente todos los archivos para realizarles commit. Si se agregan nuevos archivos, la opción -a no los preparará. Solo se confirmarán los archivos que el repositorio de Git tenga conocimiento.
+
+
+
+Fetch:La función principal de git fetch es obtener los últimos cambios del repositorio remoto sin fusionarlos automáticamente con tu rama actual. Esto te permite revisar los cambios y decidir cómo incorporarlos a tu trabajo local, pero no realiza ninguna transferencia de archivo. Es más como simplemente verificar si hay algún cambio disponible.Esto te brinda flexibilidad y control sobre cómo incorporar los cambios en tu trabajo local, permitiéndote revisarlos antes de fusionarlos y mantener tu repositorio local sincronizado con los cambios realizados por otros colaboradores.
+Algunos casos de uso comunes para git fetch son:
+-Obtener actualizaciones periódicas
+-Revisar cambios antes de fusionar
+-Sincronizar ramas remotas
+-Obtener ramas y etiquetas nuevas
+La sintaxis básica del comando git fetch es la siguiente:
+-git fetch <nombre-remoto>
+Donde <nombre-remoto> es el nombre del repositorio remoto desde el cual deseas obtener las actualizaciones. Por lo general, el nombre predeterminado es "origin", pero también puedes tener otros nombres de repositorios remotos configurados en tu repositorio local.
+
+
+
+Pull:La función git pull es un comando que combina dos operaciones: git fetch y git merge. Permite actualizar tu repositorio local con los últimos cambios del repositorio remoto y fusionar esos cambios automáticamente con tu rama actual.
+Cuando ejecutas git pull, Git realiza las siguientes acciones:
+Realiza un git fetch: Descarga las últimas actualizaciones del repositorio remoto y actualiza tu repositorio local con esa información.
+Realiza un git merge: Fusiona automáticamente los cambios descargados del repositorio remoto con tu rama actual.
+La sintaxis básica del comando git pull es la siguiente:
+-git pull <nombre-remoto> <rama-remota>
+Donde <nombre-remoto> es el nombre del repositorio remoto del cual deseas obtener los cambios, y <rama-remota> es la rama remota que deseas fusionar con tu rama actual. Por lo general, el nombre predeterminado del repositorio remoto es "origin" y la rama remota suele tener el mismo nombre que la rama local.
+
+
+
+Push: Es un comando que se utiliza para enviar tus cambios locales a un repositorio remoto y actualizar la rama correspondiente en ese repositorio. Es una forma de compartir y publicar tus commits/trabajo con otros colaboradores del proyecto y mantener el repositorio remoto actualizado con tus últimas modificaciones.Basicamente su propósito principal es compartir tus cambios con otros colaboradores y actualizar el repositorio remoto con tus últimos commits.
+La sintaxis básica del comando git push es la siguiente:
+-git push <nombre-remoto> <rama-local>
+Donde <nombre-remoto> es el nombre del repositorio remoto al que deseas enviar los commits, y <rama-local> es la rama local que deseas enviar. Por lo general, el nombre predeterminado del repositorio remoto es "origin" y la rama local suele tener el mismo nombre que la rama remota.
+Algunos puntos clave sobre git push:
+-Puedes utilizar opciones adicionales en el comando git push, como --force para forzar la actualización de la rama remota, o --tags para enviar etiquetas junto con los commits.
+-Es recomendable hacer git pull antes de git push para obtener los últimos cambios del repositorio remoto y asegurarte de que no haya conflictos entre tus cambios locales y los cambios remotos.
